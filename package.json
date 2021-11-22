@@ -1,0 +1,35 @@
+{
+  "name": "head5-mint-alert",
+  "version": "1.0.0",
+  "description": "A Discord messenger for alerting when a Head5 NFT mints on the Polygon blockchain.",
+  "bin": {
+    "head5-mint-alert": "bin/head5-mint-alert.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && yarn run webpack",
+    "webpack": "webpack --config webpack.config.js --progress"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-dynamodb": "^1.133.0",
+    "@aws-cdk/aws-lambda": "^1.133.0",
+    "@aws-cdk/core": "^1.133.0",
+    "@types/aws-lambda": "8.10.85",
+    "@types/node": "16.11.9",
+    "aws-cdk": "^1.133.0",
+    "aws-sdk": "2.1033.0",
+    "source-map-support": "0.5.21",
+    "ts-loader": "9.2.6",
+    "typescript": "4.5.2",
+    "webpack": "5.64.2",
+    "webpack-bundle-analyzer": "4.5.0",
+    "webpack-cli": "4.9.1"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-events": "1.133.0",
+    "@aws-cdk/aws-events-targets": "1.133.0",
+    "abi-decoder": "2.4.0",
+    "phin": "3.6.1",
+    "web3": "1.6.1",
+    "web3-eth": "1.6.1"
+  }
+}
